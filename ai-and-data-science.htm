@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="Machine Learning Models: Develop, train, and deploy machine learning models to automate tasks and improve efficiency.Natural Language Processing (NLP): Implement NLP techniques to analyze and understand human language for applications like chatbots and sentiment analysis." />
+<link rel="canonical" href="https://btit.nz/ai-and-data-science" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org); Commerce 2" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/sites/default/files/btit-favicon_0.ico" type="image/vnd.microsoft.icon" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>Artificial Intelligence and Data Science | BTIT Consulting Limited</title>
+        <link rel="preload" as="font" href="/themes/contrib/tarapro/fonts/open-sans.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/themes/contrib/tarapro/fonts/roboto.woff2" type="font/woff2" crossorigin>
+        <link rel="stylesheet" media="all" href="/sites/default/files/css/css_1yLWLvQTppJqfDJ5BuCk40k9wxmMztZpeto7BshiCNI.css?delta=0&amp;language=en-gb&amp;theme=tarapro&amp;include=eJxFjF0KgDAMxi40tzN9-1Wp62gruNsrKPgWEghyNkafAR_4KtzNJQxLK0KEFpdYSshyDpDHjsvpVCvHGw2CIRwacQQtapO23n7N3KjU56nECXQDsoEr9A" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_snfbSJcjkX0CkmeGn8w0mbmeAFFnvL_JwK3n9XyNZkQ.css?delta=1&amp;language=en-gb&amp;theme=tarapro&amp;include=eJxFjF0KgDAMxi40tzN9-1Wp62gruNsrKPgWEghyNkafAR_4KtzNJQxLK0KEFpdYSshyDpDHjsvpVCvHGw2CIRwacQQtapO23n7N3KjU56nECXQDsoEr9A" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/3","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en-gb"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"G-KQN7K9X68F","consentMode":false,"otherIds":[""],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJxdjl0OwjAMgy9U1gcONHld1q1Km5EGRG9PBRN_L1FsR1-MeTZBaR7HMiwqxVzAbmGFn1DJBVHyWzHSAh7S5Ura70SziyKRaTREH_v41wMS7r9mdkoHfLyd_bdwtVWj_PppUOwqPrJM4FO1xluJH_vJXHrVyhLA72BN9QHesFG6","theme":"tarapro","theme_token":null},"ajaxTrustedUrl":{"\/search\/node":true,"\/ai-and-data-science?ajax_form=1":true},"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-N3MQVZKT"]},"ajax":{"edit-captcha-response":{"callback":"recaptcha_v3_ajax_callback","event":"change","url":"\/ai-and-data-science?ajax_form=1","httpMethod":"POST","dialogType":"ajax","submit":{"_triggering_element_name":"captcha_response"}}},"user":{"uid":0,"permissionsHash":"fc1a97df8836bb64cd4913513f58dee54d9651ca2544271f6cadb179accc0175"}}</script>
+<script src="/sites/default/files/js/js_YQWw-_0WJIbbgtZWtiNKhT7fwKeJ8RKvaYCt_MaJbNE.js?scope=header&amp;delta=0&amp;language=en-gb&amp;theme=tarapro&amp;include=eJxdiUEOwjAMBD8U4gMPqpbUuI1cu7gG0d_TA0LAZTUzi3FMh-2EN9RruGVpHkyzJYdBa7_dOY7LYyniLspDQkiO-feKjudvXEpww5ptwvA407eURGANJ1G_QE9b7jqbfPLUtxfmhz5P"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?sqovmy"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?sqovmy"></script>
+<script src="/sites/default/files/js/js_ZPIwhn1pxzabek9NluYBsXEmj6NORLZnTUcObyqQOXo.js?scope=header&amp;delta=3&amp;language=en-gb&amp;theme=tarapro&amp;include=eJxdiUEOwjAMBD8U4gMPqpbUuI1cu7gG0d_TA0LAZTUzi3FMh-2EN9RruGVpHkyzJYdBa7_dOY7LYyniLspDQkiO-feKjudvXEpww5ptwvA407eURGANJ1G_QE9b7jqbfPLUtxfmhz5P"></script>
+
+  <!-- Google tag (gtag.js) --><script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-1069719152"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-1069719152');
+</script>  <style>
+  :root {
+  --bg-body: #f9f6f3;
+  --color-primary: #3a79df;
+  --color-primary-light: #dee2f2;
+  --color-secondary: #f3a435;
+  --dark: #323d47;
+  --light: #e5e2dc;
+  --border: #dbdbd3;
+  --text-color: #4a4a4a;
+  --bold-color: #222222;
+  }
+  .header {
+    background-color: #ffffff;
+  }
+</style><style>
+.slider-text {
+    background: rgba(0, 0, 0, 0.5); /* Darker background with 50% opacity */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    margin-left: 20px; /* Adjust this value as needed */
+    padding: 10px; /* Optional: add padding for better text spacing */
+}
+
+.job-listings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-listing {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-listing h3 {
+  margin-top: 0;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+</style>
+  </head>
+  <body class="user-guest inner-page path-node page-type-page no-sidebar">
+  <div class="loader"></div>
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3MQVZKT"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <header class="header">
+  <div class="container">
+    <div class="header-container">
+          <div class="site-branding">
+          <div class="block-region region-site-branding">
+    <div id="block-tarapro-branding" class="block">
+  
+    
+  <div class="block-content">
+  <div class="site-brand">
+  		<div class="site-logo">
+         <a href="/" title="Home" rel="home">
+            <img src="/sites/default/files/btit-transparent_0.png" alt="Home" />
+         </a>
+	 </div>
+     </div>
+  </div>
+</div>
+  </div>
+
+      </div>
+    <div class="header-right">
+<!-- Start: primary menu region -->
+<div class="mobile-menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<div class="primary-menu-wrapper">
+<div class="menu-wrap">
+<div class="close-mobile-menu"><i class="icon-close" aria-hidden="true"></i></div>
+  <div class="block-region region-primary-menu">
+    <nav  id="block-tarapro-main-menu" class="block block-menu navigation menu-main" aria-labelledby="block-tarapro-main-menu-menu" role="navigation">
+            
+  <h2 class="visually-hidden block-title" id="block-tarapro-main-menu-menu">Main navigation</h2>
+  
+      
+              <ul class="main-menu menu">
+                    <li class="menu-item main-menu-item menu-item-level-1 expanded menu-item-has-children">
+                <a href="/ai-powered-digital-transformation" title="Navigate the complexities of digital change with AI, cloud, IoT, and advanced workplace solutions." data-drupal-link-system-path="node/5">AI Powered Digital Transformation</a>
+
+                                <ul class="submenu">
+                    <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/ai-powered-business" title="Find out how AI will transform your business" data-drupal-link-system-path="node/6">AI Powered Business</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/cloud-and-software-defined-everything" data-drupal-link-system-path="node/8">Cloud and Software Defined Everything</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/internet-things" title="IoT solutions to help your business harness the power of connected devices" data-drupal-link-system-path="node/9">Internet of Things</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2 expanded menu-item-has-children">
+                <a href="/digital-transformation/workplace-of-the-future" title="How should your place of business evolve" data-drupal-link-system-path="node/7">Workplace of the Future</a>
+
+                                <ul class="submenu">
+                    <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/emission-control-open-source" title="The intersection of sustainability and open source technology has created a powerful synergy, driving innovation and enabling organisations to tackle environmental challenges more effectively. Open source solutions like OpenLCA, OpenGHGMap, and Carboscope" data-drupal-link-system-path="node/79">Emission Control with Open Source</a>
+
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-1 expanded menu-item-has-children active menu-item-active">
+                <a href="/ai-and-data-science" title="Artificial Intelligence and Data Science Services" data-drupal-link-system-path="node/3" class="is-active" aria-current="page">Artificial Intelligence and Data Science</a>
+
+                                <ul class="submenu">
+                    <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/ai-adoption-maturity-frameworks" title="AI adoption maturity models are frameworks designed to assess and guide organisations in their journey towards integrating and leveraging artificial intelligence (AI) technologies. These models typically outline various stages or levels of maturity, provi" data-drupal-link-system-path="node/42">AI Adoption Maturity Frameworks</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/our-ai-consulting-frameworks-and-methodologies" title="Adopting AI in medium-sized businesses requires structured, incremental approaches to ensure scalability, cost-effectiveness, and alignment with business objectives. Here, we outline the some of the frameworks and methodologies we use in our AI consulting" data-drupal-link-system-path="node/41">Our AI Consulting Frameworks and Methodologies</a>
+
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-1 expanded menu-item-has-children">
+                <a href="/data-strategy-and-engineering" title="Our full range of professional data services includes:  Data Strategy  Data Architecture  Data Analytics  Data Modelling  Data Engineering  Data Management Training" data-drupal-link-system-path="node/4">Data Strategy and Engineering</a>
+
+                                <ul class="submenu">
+                    <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/ai-data-science/data-strategy" title="creating a comprehensive plan to enhance how your organization acquires, stores, manages, shares, and utilizes data" data-drupal-link-system-path="node/10">Data Strategy</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/data-architecture" title="data architecture is strategic in nature, encompassing the overall design and structure of your data systems" data-drupal-link-system-path="node/12">Data Architecture</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/ai-data-science/data-analytics" title="Putting together computer skills, mathematics, statistics, descriptive techniques, and predictive models" data-drupal-link-system-path="node/13">Data Analytics</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/ai-data-science/data-engineering" data-drupal-link-system-path="node/11">Data Engineering</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/data-modelling" title="We use modern techniques, including AI-powered methods, to develop comprehensive data models that support your strategic and operational needs" data-drupal-link-system-path="node/14">Data Modelling</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/data-management-training" title="Our training programs are tailored to meet the diverse needs of different users and delivered through various formats to ensure comprehensive learning and practical application" data-drupal-link-system-path="node/15">Data Management Training</a>
+
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-1 expanded menu-item-has-children">
+                <a href="/everything-service" title="Distributed Systems, Special Projects, Managed Services" data-drupal-link-system-path="node/2">Everything as a Service</a>
+
+                                <ul class="submenu">
+                    <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/distributed-systems" title="Whether you are looking to implement cutting-edge frameworks like Hadoop, Spark, or Kubernetes, integrate robust messaging systems like Apache Kafka or RabbitMQ, or enhance your cloud infrastructure with platforms like OpenNebula and OpenStack, our team o" data-drupal-link-system-path="node/17">Distributed Systems</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2 expanded menu-item-has-children">
+                <a href="/as-a-service/managed-applications-services" title="comprehensive support for configuring, updating, optimizing, and upgrading open source, commercially developed and custom-written applications" data-drupal-link-system-path="node/16">Managed Applications Services</a>
+
+                                <ul class="submenu">
+                    <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/invoice-ninja-open-source-business-invoicing" data-drupal-link-system-path="node/91">Invoice Ninja - The Open Source Business Invoicing</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/managing-services-and-assets-intelligently" data-drupal-link-system-path="node/35">Managing IT Services and Assets, Intelligently!</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/meet-ultimate-all-one-crm-vtiger-cloud-crm-v9" data-drupal-link-system-path="node/38">Meet the ultimate all in one CRM - Vtiger Cloud CRM V9</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/orangehrm-hr-software-all" title="OrangeHRM is a versatile and powerful Human Resource Management (HRM) software designed to cater to businesses of all sizes. It offers a comprehensive suite of HR tools to manage everything from employee records to performance evaluations, leave managemen" data-drupal-link-system-path="node/86">OrangeHRM - The HR Software for All</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/our-integration-capability" data-drupal-link-system-path="node/82">Our Integration Capability</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/your-one-stop-shop-postgresql-partner" data-drupal-link-system-path="node/81">Your one stop shop PostgreSQL partner</a>
+
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/mission-impossible" title="Here are some of the scenarios you may find our services handy" data-drupal-link-system-path="node/18">Mission Impossible</a>
+
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-1">
+                <a href="https://blog.btit.nz/node/1">BTIT Blog</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-1 expanded menu-item-has-children">
+                <a href="/about-us" data-drupal-link-system-path="node/19">About us</a>
+
+                                <ul class="submenu">
+                    <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/contact" data-drupal-link-system-path="contact">Contact us</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/jobs?limit=4&amp;offset=0" data-drupal-link-query="{&quot;limit&quot;:&quot;4&quot;,&quot;offset&quot;:&quot;0&quot;}" data-drupal-link-system-path="orangehrm/job-listings">Current Job Vacancies</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/our-partners" data-drupal-link-system-path="node/32">Our Partners</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/ai-affairs" data-drupal-link-system-path="node/34">Aotearoa AI Affairs</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/the-good-engineer" data-drupal-link-system-path="node/33">The Good Engineer</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2 expanded menu-item-has-children">
+                <a href="/policies-and-procedures" data-drupal-link-system-path="node/20">Policies and Procedures</a>
+
+                                <ul class="submenu">
+                    <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/access-control-and-user-management" data-drupal-link-system-path="node/21">Access Control and User Management</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/availability-and-resilience-policy-template" data-drupal-link-system-path="node/22">Availability and Resilience Policy Template</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/btit-personnel-vetting-policy" data-drupal-link-system-path="node/93">BTIT Personnel Vetting Policy</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/business-continuity-and-disaster-recovery" data-drupal-link-system-path="node/23">Business Continuity and Disaster Recovery</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/cloud-computing-code-practice" data-drupal-link-system-path="node/24">Cloud Computing Code of Practice</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/cryptographic-key-management-template" data-drupal-link-system-path="node/25">Cryptographic Key Management Template</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/data-restoration-policy-template" data-drupal-link-system-path="node/26">Data Restoration Policy Template</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/environmental-and-sustainability-policy" title="BTIT Consulting is committed to promoting environmental sustainability and integrating sustainable practices into all aspects of our business operations. We recognise our responsibility to protect the environment and contribute to a sustainable future for" data-drupal-link-system-path="node/84">Environmental and Sustainability Policy</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/health-and-safety-policy" title="BTIT Consulting is committed to providing a safe and healthy work environment for all employees, contractors, and visitors, both in our offices and at remote locations, including home offices and client premises in New Zealand and overseas. We comply with" data-drupal-link-system-path="node/85">Health and Safety Policy</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/identity-management-and-protection-process" data-drupal-link-system-path="node/27">Identity Management and Protection Process</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/incident-response-policy-and-sla-template" data-drupal-link-system-path="node/28">Incident Response Policy and SLA template</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/password-policy" data-drupal-link-system-path="node/29">Password Policy</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/privacy-policy" data-drupal-link-system-path="node/36">Privacy Policy</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-3">
+                <a href="/terms-service-and-sla-template" data-drupal-link-system-path="node/30">Terms of Service and SLA Template</a>
+
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/news" data-drupal-link-system-path="news">news</a>
+
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-2">
+                <a href="/our-clients" title="The organisations we have delivered to" data-drupal-link-system-path="node/83">Our Clients</a>
+
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item main-menu-item menu-item-level-1">
+                <a href="/launch-free-kiwi-business-initiative" data-drupal-link-system-path="node/88">Free For Kiwi Business</a>
+
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+</div>
+</div>
+<!-- End: primary menu region -->
+<div class="full-page-search">
+<div class="search-icon"><i class="icon-search" aria-hidden="true"></i></div> <!--/.search icon -->
+<div class="search-box">
+  <div class="search-box-close"></div>
+  <div class="search-box-content">
+      <div class="block-region region-search-box">
+    <div class="search-block-form block" data-drupal-selector="search-block-form" id="block-tarapro-search" role="search">
+  
+      <h2 class="block-title">Search</h2>
+    
+  <div class="block-content">
+      <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label">
+      <label for="edit-keys" class="visually-hidden">Search</label>
+        <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" class="form-search" />
+
+        </div>
+
+
+  <input data-drupal-selector="edit-captcha-sid" type="hidden" name="captcha_sid" value="6224" />
+<input data-drupal-selector="edit-captcha-token" type="hidden" name="captcha_token" value="xWOoT1PK9Prcd_K1lqIpXnPtQGZ_ZhTGrVVFEt6GyjM" />
+<input id="recaptcha-v3-token" class="recaptcha-v3-token" data-recaptcha-v3-action="suspicious" data-recaptcha-v3-site-key="6Ldd0CwqAAAAAD4qJ2gLZ6CQI-2Wdqd6m2b9bIwt" data-drupal-selector="edit-captcha-response" type="hidden" name="captcha_response" value="" />
+<input data-drupal-selector="edit-is-recaptcha-v3" type="hidden" name="is_recaptcha_v3" value="1" />
+
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit" />
+</div>
+
+</form>
+
+    </div>
+</div>
+  </div>
+
+  </div>
+  <div class="search-box-close"></div>
+</div><!--/search-box-->
+</div> <!--/.full-page-search -->
+ <!--/end if for page.search_box -->
+      <div class="sliding-panel-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   <!--/end if for animated_sidebar_option -->
+</div> <!--/.header-right -->
+  </div> <!--/.header-container -->
+  </div> <!--/.container -->
+</header><!-- /.header -->
+<!-- End: Header -->
+<!-- Start: Breadcrumb -->
+<div id="breadcrumb">
+   <div class="container">
+     
+   </div> <!--/.container -->
+</div>
+<!-- End: Breadcrumb -->
+<!-- Start: highlighted -->
+<div id="highlighted">
+   <div class="container">
+        <div class="block-region region-highlighted">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+   </div>
+</div>
+<!-- End: highlighted -->
+<div id="main-wrapper" class="main-wrapper">
+  <div class="container">
+    <div class="main-container">
+      <main id="main" class="page-content">
+        <a id="main-content" tabindex="-1"></a>                  <div class="block-region region-content">
+    <div id="block-tarapro-page-title" class="block">
+  
+    
+  <div class="block-content">
+        
+      <div class="page-title-wrap">
+      <h1 class="page-title"><span>Artificial Intelligence and Data Science</span>
+</h1>
+    </div> <!--/.page-title-wrap -->
+    
+
+    </div>
+</div><div id="block-tarapro-content" class="block">
+  
+    
+  <div class="block-content">
+      <article data-history-node-id="3" class="node node-type-page node-view-mode-full">
+
+  
+
+  <div class="node-content">
+    
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field-item"><img src="/sites/default/files/inline-images/ai%20banner%202.jpg" data-entity-uuid="fbbee860-7148-4d3e-a4c5-52cb4c6c96f8" data-entity-type="file" alt="Artificial Intelligence" width="1022" height="678" loading="lazy"><ul><li dir="ltr"><p dir="ltr"><strong>Machine Learning Models:</strong> Develop, train, and deploy machine learning models to automate tasks and improve efficiency.</p></li><li dir="ltr"><p dir="ltr"><strong>Natural Language Processing (NLP):</strong> Implement NLP techniques to analyze and understand human language for applications like chatbots and sentiment analysis.</p></li><li dir="ltr"><p dir="ltr"><strong>Computer Vision:</strong> Utilize image and video analysis techniques to automate visual tasks such as object detection and facial recognition.</p></li><li dir="ltr"><p dir="ltr"><strong>AI-Powered Automation:</strong> Automate repetitive tasks and processes using AI to enhance productivity and reduce operational costs.</p></li><li dir="ltr"><p dir="ltr"><strong>Deep Learning Solutions:</strong> Develop deep learning models for complex tasks such as speech recognition, image classification, and more.</p></li><li dir="ltr"><p dir="ltr"><strong>Recommendation Systems:</strong> Build personalized recommendation engines to enhance user experience and engagement.</p></li><li dir="ltr"><p dir="ltr"><strong>AI Strategy and Consulting:</strong> Provide expert advice on integrating AI technologies into business processes and strategies.</p></li><li dir="ltr"><p dir="ltr"><strong>Robotic Process Automation (RPA):</strong> Implement RPA solutions to automate rule-based tasks and workflows.</p></li><li dir="ltr"><p dir="ltr"><strong>Real-Time Analytics:</strong> Enable real-time data processing and analytics for timely insights and decision-making.</p></li><li dir="ltr"><p dir="ltr"><strong>Anomaly Detection:</strong> Identify unusual patterns and outliers in data to detect fraud, defects, or other significant events.</p></li><li dir="ltr"><p dir="ltr"><strong>Data Integration:</strong> Integrate data from multiple sources to create a unified view for comprehensive analysis.</p></li><li dir="ltr"><p dir="ltr"><strong>AI and Machine Learning Integration:</strong> Embed AI and machine learning capabilities into existing systems and applications.</p></li><li dir="ltr"><p dir="ltr"><strong>Large Language Models (LLM):</strong> Leverage advanced language models for tasks such as automated content generation and advanced NLP applications.</p></li><li dir="ltr"><p dir="ltr"><strong>Retrieval-Augmented Generation (RAG):</strong> Combine information retrieval with language generation to enhance the accuracy and relevance of AI responses.</p></li></ul><p>&nbsp;</p><p>&nbsp;</p><p><strong>What's in our AI Toolbox:</strong></p><p dir="ltr">TensorFlow, PyTorch, scikit-learn, Apache Spark, Pandas, Dask, spaCy, NLTK, Hugging Face Transformers, Matplotlib, Tableau, Power BI, Hadoop, Hive, Kafka, PostgreSQL, MongoDB, Elasticsearch, Amazon Web Services (AWS), Google Cloud Platform (GCP), Microsoft Azure, Keras, MXNet, Caffe, RapidMiner, KNIME, Alteryx ,GPT-3, GPT-4, OpenAI API, Hugging Face Transformers, GPT-Neo, GPT-J, EleutherAI, DALL-E, Codex, ChatGPT, LLaMA, BERT/Gemini, OpenCV, TensorFlow, PyTorch, Keras, Dlib, scikit-image, Pillow, SimpleCV, ImageAI, DeepFace, YOLO, Fastai, Detectron2, NVIDIA DeepStream, OpenVINO, Google Cloud Vision API, Amazon Rekognition, Microsoft Azure Computer Vision, IBM Watson Visual Recognition...</p><p><br>&nbsp;</p><img src="/sites/default/files/inline-images/data%20science%20services.jpg" data-entity-uuid="7c03134e-eb95-405d-88b5-9195cf689931" data-entity-type="file" alt="Data Science" width="1024" height="1024" loading="lazy"><ul><li dir="ltr"><p dir="ltr"><strong>Data Analysis and Visualization:</strong> Transform raw data into meaningful insights using advanced analytical tools and techniques.</p></li><li dir="ltr"><p dir="ltr"><strong>Predictive Analytics:</strong> Utilize statistical models and machine learning algorithms to forecast future trends and outcomes.</p></li><li dir="ltr"><p dir="ltr"><strong>Data Mining:</strong> Extract valuable information from large datasets to discover patterns, correlations, and insights.</p></li><li dir="ltr"><p dir="ltr"><strong>Statistical Modeling:</strong> Develop and apply mathematical models to understand complex data relationships and make informed decisions.</p></li><li dir="ltr"><p dir="ltr"><strong>Data Wrangling and Preparation:</strong> Clean and preprocess data to ensure it is suitable for analysis.</p></li><li dir="ltr"><p dir="ltr"><strong>Big Data Solutions:</strong> Implement solutions to handle, process, and analyze large-scale datasets efficiently.</p></li><li dir="ltr"><p dir="ltr"><strong>Business Intelligence (BI):</strong> Develop BI strategies and dashboards to support data-driven decision-making.</p></li><li dir="ltr"><p dir="ltr"><strong>Custom Data Science Solutions:</strong> Tailor data science projects to meet specific organizational needs and objectives.</p></li></ul><p>&nbsp;</p></div>
+      <span class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-url="https://btit.nz/ai-and-data-science" data-a2a-title="Artificial Intelligence and Data Science"><a class="a2a_dd addtoany_share" href="https://www.addtoany.com/share#url=https%3A%2F%2Fbtit.nz%2Fai-and-data-science&amp;title=Artificial%20Intelligence%20and%20Data%20Science"></a><a class="a2a_button_linkedin"></a><a class="a2a_button_x"></a><a class="a2a_button_email"></a><a class="a2a_button_telegram"></a><a class="a2a_button_xing"></a><a class="a2a_button_facebook"></a></span>
+
+  </div>
+</article>
+
+    </div>
+</div>
+  </div>
+
+              </main>
+                </div>   </div> </div>  <div class="sliding-sidebar animated-panel-from-right">
+<!-- /page.sidebar_sliding -->
+</div> <!-- /..sliding-sidebar -->
+<section id="last-section"></section>
+<!-- Start: Footer -->
+<footer id="footer">
+  <div class="footer">
+    <div class="container">
+    <!-- /footer-top -->
+           <section class="footer-bottom-middle">
+              <div class="copyright">
+                        <div class="block-region region-copyright">
+    <div id="block-tarapro-btitfooter" class="block">
+  
+    
+  <div class="block-content">
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field-item"><p>© 2024 BTIT Consulting Limited, All rights reserved | <a href="/privacy">Our Privacy Policy</a></p></div>
+      
+    </div>
+</div>
+  </div>
+
+           <!-- end if copyright_text_custom -->
+        </div><!-- /copyright -->
+      <!-- end if for copyright -->
+      <!-- end if social_icons_footer_option -->
+    </section><!-- /footer-bottom-middle -->
+    <!-- end condition for footer_bottom -->
+    </div><!-- /.container -->
+  </div> <!--/.footer -->
+</footer>
+  <!-- Start Cookie Alert -->
+<div class="cookiealert" role="alert">
+  <div class="container">    
+              <p>This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies.
+        <button type="button" class="acceptcookies" aria-label="Close">I agree</button></p>
+        </div>
+</div>
+<!-- End Cookie Alert -->
+<div class="scrolltop"><i class="icon-arrow-up" aria-hidden="true"></i></div>
+<!-- End: Footer -->
+<style>
+.im {
+  display: none;
+}
+</style>
+<style>
+.fab {
+  display: none;
+}
+</style>
+
+  </div>
+
+    
+  
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ldd0CwqAAAAAD4qJ2gLZ6CQI-2Wdqd6m2b9bIwt" defer async></script>
+<script src="/sites/default/files/js/js_pdfHBjnpsBZS8Hhj705B3awNlQDEq-lxjHhWUi7hJZU.js?scope=footer&amp;delta=1&amp;language=en-gb&amp;theme=tarapro&amp;include=eJxdiUEOwjAMBD8U4gMPqpbUuI1cu7gG0d_TA0LAZTUzi3FMh-2EN9RruGVpHkyzJYdBa7_dOY7LYyniLspDQkiO-feKjudvXEpww5ptwvA407eURGANJ1G_QE9b7jqbfPLUtxfmhz5P"></script>
+<script src="https://static.addtoany.com/menu/page.js" defer></script>
+<script src="/sites/default/files/js/js_2NNnKxyYqXHGkPedIqI_VuVukpOtdZXedGkMVQTjmJs.js?scope=footer&amp;delta=3&amp;language=en-gb&amp;theme=tarapro&amp;include=eJxdiUEOwjAMBD8U4gMPqpbUuI1cu7gG0d_TA0LAZTUzi3FMh-2EN9RruGVpHkyzJYdBa7_dOY7LYyniLspDQkiO-feKjudvXEpww5ptwvA407eURGANJ1G_QE9b7jqbfPLUtxfmhz5P"></script>
+
+<script>
+jQuery(window).on("load", function () {
+  if (jQuery(window).width() > 767) {
+    var footerheight = jQuery("#footer").outerHeight(true);
+    jQuery("#last-section").css("height", footerheight);
+  }
+});
+</script>
+<style>
+@media screen and (min-width: 768px) {
+#footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+}
+</style>
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+    jQuery(".loader").fadeOut( 'slow' );
+  });
+</script>
+
+  </body>
+</html>
